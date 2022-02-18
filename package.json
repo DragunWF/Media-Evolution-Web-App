@@ -1,8 +1,9 @@
 {
-  "name": "pt2-(mil)",
+  "name": "Performance Task #2 (Media Information Literacy)",
   "version": "1.0.0",
-  "description": "",
+  "description": "My performance task for my MIL class work.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
