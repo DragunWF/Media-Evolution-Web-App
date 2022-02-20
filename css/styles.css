@@ -1,0 +1,52 @@
+:root {
+  --color-text: #1d1c1a;
+  --color-background: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ffffff;
+  background-image: url("/img/background.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Objects */
+.flex-object {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Main */
+.header {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.header-container {
+  background: #ededed;
+  /* background: rgb(255, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 1) 31%,
+    rgba(255, 204, 0, 1) 66%
+  ); */
+  border-radius: 100%;
+  padding: 7.5rem;
+}
+
+.header-container h1 {
+  font-size: 4rem;
+}
+
+.header-container h2 {
+  font-size: 2.5rem;
+}
