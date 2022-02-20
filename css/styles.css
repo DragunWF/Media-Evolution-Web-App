@@ -6,7 +6,7 @@
 
 ::selection {
   color: #fff;
-  background: #fbb741;
+  background: #5edd5f;
 }
 
 html {
@@ -33,10 +33,12 @@ body {
 .icons {
   font-size: 10rem;
   transition: all 0.25s ease-out;
+  color: var(--color-black);
 }
 
 .icons:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
+  color: #5edd5f;
   cursor: pointer;
 }
 
@@ -95,7 +97,6 @@ body {
   box-shadow: 5px 10px #888888;
   padding: 3rem;
   gap: 1.5rem;
-  transition: all 0.25s ease-out;
 }
 
 .container h1 {
@@ -115,10 +116,6 @@ body {
   font-weight: 500;
   width: 50ch;
   text-align: center;
-}
-
-.container:hover {
-  transform: scale(1.025);
 }
 
 #question {
