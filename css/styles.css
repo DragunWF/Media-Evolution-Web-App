@@ -1,6 +1,7 @@
 :root {
   --color-text: #1d1c1a;
-  --color-background: #fff;
+  --color-container: #f7f5f5;
+  --color-black: #232323;
 }
 
 html {
@@ -8,7 +9,7 @@ html {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: url("/img/background.svg");
   background-attachment: fixed;
   background-size: cover;
@@ -25,22 +26,39 @@ body {
   flex-direction: column;
 }
 
-/* Main */
+/* Navigation */
+.nav {
+  background: var(--color-black);
+  width: 100%;
+  color: #fff;
+}
+
+.nav ul {
+  flex-direction: row;
+  gap: 5rem;
+  list-style: none;
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 2rem;
+  padding-left: 0;
+}
+
+/* Header */
 .header {
   margin-top: 10rem;
   text-align: center;
 }
 
 .header-container {
-  background: #ededed;
-  /* background: rgb(255, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 0, 0, 1) 31%,
-    rgba(255, 204, 0, 1) 66%
-  ); */
+  background: var(--color-container);
   border-radius: 100%;
   padding: 7.5rem;
+  box-shadow: 5px 10px #888888;
+  transition: all 0.25s ease-out;
+}
+
+.header-container:hover {
+  transform: scale(1.025);
 }
 
 .header-container h1 {
@@ -49,4 +67,37 @@ body {
 
 .header-container h2 {
   font-size: 2.5rem;
+}
+
+/* Content */
+.content {
+  margin-top: 8rem;
+}
+
+.container {
+  background: var(--color-container);
+  border-radius: 100%;
+  box-shadow: 5px 10px #888888;
+  padding: 5rem;
+}
+
+.container h1 {
+  font-size: 3.5rem;
+}
+
+.container p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+/* Footer */
+.footer {
+  background: var(--color-black);
+  margin-top: 10rem;
+  padding: 2rem;
+}
+
+.footer h1 {
+  font-size: 1.5rem;
+  color: #fff;
 }
