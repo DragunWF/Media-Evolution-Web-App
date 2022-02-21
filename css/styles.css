@@ -111,23 +111,30 @@ body {
   text-align: center;
 }
 
+.container p,
 .container h2 {
-  width: 50ch;
-  text-align: center;
   font-size: 1.8rem;
+  width: 50ch;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.container h2 {
   font-weight: 600;
   margin-top: 0;
 }
 
 .container p {
-  font-size: 1.8rem;
   font-weight: 500;
-  width: 50ch;
-  text-align: center;
 }
 
 #question {
-  gap: 0.7rem;
+  gap: 0.5rem;
+}
+
+#question p,
+#question h2 {
+  margin-top: 0;
 }
 
 /* Footer */
@@ -144,10 +151,12 @@ body {
 
 /* Mobile */
 @media screen and (max-width: 768px) {
+  /* Nav */
   .nav h1 {
     font-size: 1.8rem;
   }
 
+  /* Header */
   .header-container {
     padding: 4rem;
     width: 75%;
@@ -161,15 +170,19 @@ body {
     font-size: 2rem;
   }
 
+  /* Content */
   .container {
-    width: 75%;
-    padding: 0.7rem;
+    width: 80%;
+    padding: 0.8rem;
+  }
+
+  .container h1 {
+    font-size: 3rem;
   }
 
   .container p,
   .container h2 {
-    width: 30ch;
+    width: 35ch;
     font-size: 1.6rem;
-    text-align: left;
   }
 }
