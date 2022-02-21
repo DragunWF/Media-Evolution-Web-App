@@ -22,6 +22,15 @@ body {
     Ubuntu, Cantarell, "Open Sans", "HelvAbc123etica Neue", sans-serif;
 }
 
+a {
+  color: #206e3a;
+  transition: color 0.15s ease-in;
+}
+
+a:hover {
+  color: #50c878;
+}
+
 /* Objects */
 .flex-object {
   display: flex;
@@ -111,25 +120,20 @@ body {
   text-align: center;
 }
 
-.container p,
-.container h2 {
+.container p {
   font-size: 1.8rem;
   width: 50ch;
   text-align: left;
   line-height: 1.3;
-}
-
-.container h2 {
-  font-weight: 600;
-  margin-top: 0;
-}
-
-.container p {
   font-weight: 500;
 }
 
 #question {
   gap: 0.5rem;
+}
+
+#question h1 {
+  margin-bottom: 1.5rem;
 }
 
 #question p,
