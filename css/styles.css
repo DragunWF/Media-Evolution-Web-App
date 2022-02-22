@@ -271,7 +271,7 @@ a:hover {
   }
 
   .form-container h2 {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   .form-container input {
@@ -279,6 +279,6 @@ a:hover {
   }
 
   .form-container textarea {
-    width: 80%;
+    width: 70%;
   }
 }
