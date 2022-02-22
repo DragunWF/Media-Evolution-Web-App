@@ -59,12 +59,11 @@ a:hover {
   color: #fff;
 }
 
-.nav h1 {
-  font-weight: bold;
+.nav-items {
+  flex-direction: row;
+  gap: 10rem;
   font-size: 2rem;
-  text-align: center;
-  text-decoration: underline;
-  padding: 0.3rem;
+  padding: 1rem;
 }
 
 .nav a {
@@ -77,8 +76,15 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-  .nav h1 {
-    font-size: 1.8rem;
+  .nav-items {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .nav-item {
+    border-bottom: 1px solid #c0c0c0;
+    width: 80%;
+    text-align: center;
   }
 }
 
