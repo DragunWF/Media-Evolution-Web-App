@@ -2,6 +2,7 @@
   --color-text: #1d1c1a;
   --color-container: #f7f5f5;
   --color-bar: #232323;
+  --color-shadow: #888888;
 }
 
 ::selection {
@@ -91,7 +92,7 @@ a:hover {
   background: var(--color-container);
   border-radius: 100%;
   padding: 7.5rem;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px var(--color-shadow);
   transition: all 0.25s ease-out;
 }
 
@@ -110,7 +111,7 @@ a:hover {
 @media screen and (max-width: 768px) {
   .header-container {
     padding: 4rem;
-    width: 75%;
+    width: 70%;
   }
 
   .header-container h1 {
@@ -131,7 +132,7 @@ a:hover {
 .container {
   background: var(--color-container);
   border-radius: 30px;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px var(--color-shadow);
   padding: 3rem;
   gap: 1.5rem;
 }
@@ -149,23 +150,23 @@ a:hover {
   font-weight: 500;
 }
 
-#question {
+.text-container {
   gap: 0.5rem;
 }
 
-#question h1 {
+.text-container h1 {
   margin-bottom: 1.5rem;
 }
 
-#question p,
-#question h2 {
+.text-container p,
+.text-container h2 {
   margin-top: 0;
 }
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 80%;
-    padding: 0.8rem;
+    width: 75%;
+    padding: 1rem;
   }
 
   .container h1 {
@@ -174,7 +175,7 @@ a:hover {
 
   .container p,
   .container h2 {
-    width: 35ch;
+    width: 30ch;
     font-size: 1.6rem;
   }
 }
@@ -213,7 +214,7 @@ a:hover {
 .form-container input,
 .form-container textarea {
   font-size: 1.8rem;
-  font-weight: 400;
+  padding: 0.3rem;
 }
 
 .form-container textarea {
@@ -231,8 +232,8 @@ a:hover {
   background: #fff;
   border: 0;
   border-radius: 10px;
-  box-shadow: 2.5px 5px #888888;
-  color: #1d1c1a;
+  box-shadow: 2.5px 5px var(--color-shadow);
+  color: var(--color-text);
   padding: 1.2rem;
   font-weight: 500;
   font-size: 2rem;
@@ -249,8 +250,11 @@ a:hover {
     width: 70%;
   }
 
+  .form-container input {
+    width: 45%;
+  }
+
   .form-container textarea {
-    width: 100%;
-    padding: 0.3rem;
+    width: 50%;
   }
 }

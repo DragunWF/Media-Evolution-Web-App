@@ -1,13 +1,15 @@
 {
-  "name": "Performance Task #2 (Media Information Literacy)",
+  "name": "pt2-mil",
   "version": "1.0.0",
   "description": "My performance task for my MIL class work.",
-  "main": "index.js",
-  "type": "module",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Marc Plarisan",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
 }
