@@ -75,6 +75,12 @@ a:hover {
   color: #50c878;
 }
 
+@media screen and (max-width: 768px) {
+  .nav h1 {
+    font-size: 1.8rem;
+  }
+}
+
 /* Header */
 .header {
   margin-top: 10rem;
@@ -99,6 +105,21 @@ a:hover {
 
 .header-container h2 {
   font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    padding: 4rem;
+    width: 75%;
+  }
+
+  .header-container h1 {
+    font-size: 3.5rem;
+  }
+
+  .header-container p {
+    font-size: 2rem;
+  }
 }
 
 /* Content */
@@ -141,40 +162,7 @@ a:hover {
   margin-top: 0;
 }
 
-/* Footer */
-.footer {
-  background: var(--color-bar);
-  margin-top: 10rem;
-  padding: 2rem;
-}
-
-.footer h1 {
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-/* Mobile */
 @media screen and (max-width: 768px) {
-  /* Nav */
-  .nav h1 {
-    font-size: 1.8rem;
-  }
-
-  /* Header */
-  .header-container {
-    padding: 4rem;
-    width: 75%;
-  }
-
-  .header-container h1 {
-    font-size: 3.5rem;
-  }
-
-  .header-container p {
-    font-size: 2rem;
-  }
-
-  /* Content */
   .container {
     width: 80%;
     padding: 0.8rem;
@@ -188,5 +176,81 @@ a:hover {
   .container h2 {
     width: 35ch;
     font-size: 1.6rem;
+  }
+}
+
+/* Footer */
+.footer {
+  background: var(--color-bar);
+  margin-top: 10rem;
+  padding: 2rem;
+}
+
+.footer h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Form */
+.form-container {
+  background: var(--color-container);
+  width: 35%;
+  height: 60%;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.form-container h1 {
+  text-align: center;
+  font-size: 4rem;
+}
+
+.form-container h2 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+}
+
+.form-container input,
+.form-container textarea {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.form-container textarea {
+  width: 100%;
+  resize: none;
+}
+
+.form-buttons {
+  margin-top: 2rem;
+  flex-direction: row;
+  gap: 3.5rem;
+}
+
+.form-buttons button {
+  background: #fff;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 2.5px 5px #888888;
+  color: #1d1c1a;
+  padding: 1.2rem;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: all 0.25s;
+}
+
+.form-buttons button:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    text-align: center;
+    width: 70%;
+  }
+
+  .form-container textarea {
+    width: 100%;
+    padding: 0.3rem;
   }
 }
