@@ -201,6 +201,10 @@ a:hover {
   padding: 3rem;
 }
 
+.form-container form {
+  padding: 0;
+}
+
 .form-container h1 {
   text-align: center;
   font-size: 4rem;
@@ -250,11 +254,19 @@ a:hover {
     width: 70%;
   }
 
+  .form-container h1 {
+    font-size: 3.2rem;
+  }
+
+  .form-container h2 {
+    font-size: 2rem;
+  }
+
   .form-container input {
     width: 45%;
   }
 
   .form-container textarea {
-    width: 50%;
+    width: 80%;
   }
 }
