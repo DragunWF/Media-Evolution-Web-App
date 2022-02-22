@@ -79,9 +79,15 @@ a:hover {
   .nav-items {
     flex-direction: column;
     gap: 3rem;
+    width: 100%;
+  }
+
+  .nav-items a {
+    text-decoration: none;
   }
 
   .nav-item {
+    display: block;
     border-bottom: 1px solid #c0c0c0;
     width: 80%;
     text-align: center;
