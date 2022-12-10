@@ -1,5 +1,11 @@
 # Performance Task #2 (Media Information Literacy)
 
+## Description
+
+Just one of my submission to a performance task back when I was at high school.
+
+---
+
 ## Instructions
 
 ### Directions:
